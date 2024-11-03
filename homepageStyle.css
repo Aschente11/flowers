@@ -2,7 +2,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-family: 'Playfair Display', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +22,17 @@ h1 {
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
     letter-spacing: 1.5px;
     animation: fadeIn 2s ease-in-out;
+}
+
+/* Paragraph styling to match theme */
+p {
+    font-size: 1.2em;
+    color: #ddd; /* Softer white for contrast */
+    margin-bottom: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 2.5s ease-in-out;
 }
 
 /* Button styling */
@@ -50,7 +61,7 @@ button:active {
     transform: scale(0.95);
 }
 
-/* Fade-in animation for the heading */
+/* Fade-in animation for the heading and paragraph */
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(-20px); }
     100% { opacity: 1; transform: translateY(0); }
