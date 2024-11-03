@@ -1,0 +1,62 @@
+/* Set background color to black and use a romantic color palette */
+body {
+    background-color: black;
+    color: #ffb6c1; /* Soft pink for text */
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Add styles to the main heading */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff69b4; /* Brighter pink for emphasis */
+    text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Button styling */
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.4);
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink for hover effect */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #c71585; /* Even darker pink for active state */
+    transform: scale(0.95);
+}
+
+/* Fade-in animation for the heading */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Small heartbeat effect */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+button:hover {
+    animation: heartbeat 1s infinite;
+}
